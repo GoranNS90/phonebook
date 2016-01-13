@@ -1,0 +1,1 @@
+INSERT INTO `phonebook`.`phonebook` (`id`, `firstname`, `lastname`, `phone_number`) VALUES ('1', 'Milic', 'Vuletic', '021 22 333');

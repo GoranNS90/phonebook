@@ -1,0 +1,34 @@
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<span>Add contact</span>
+			</div>
+			<div class="panel-body">
+				<form role="form" ng-submit="saveContact(contact)">
+					<div class="alert alert-success" ng-if="success">
+					  	<strong>Success!</strong> new contact has been saved.
+					</div>
+					<div class="alert alert-danger" ng-if="error">
+					  	<strong>Error!</strong> an error has occurred.
+					</div>
+					<div class="form-group">
+						<label for="firstname">Firstname:</label> <input type="text"
+							class="form-control" id="firstname" name="firstname" ng-model="contact.firstname"/>
+					</div>
+					<div class="form-group">
+						<label for="lastname">Lastname:</label>
+						<input type="text" class="form-control" rows="5" id="lastname" ng-model="contact.lastname"></input>
+					</div>
+					<div class="form-group">
+						<label for="phoneNumber">Phone number:</label>
+						<input type="text" class="form-control" rows="5" id="phoneNumber" ng-model="contact.phoneNumber"></input>
+					</div>
+					<div class="form-group text-center">
+						<button type="submit" class="btn btn-primary">Add</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
